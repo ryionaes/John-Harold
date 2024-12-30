@@ -89,61 +89,64 @@ export default function Page() {
     const Footer = () => {
         return (
             <footer className="bg-[#344E41] text-[#DAD7CD] py-6">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center">
-                    <p className="text-sm sm:text-base text-center sm:text-left mb-4 sm:mb-0 sm:mr-16">
-                        &copy; 2024 John Harold Beladas. All rights reserved.
-                    </p>
+                {/* Full-width container spanning the screen with rounded corners */}
+                <div className="w-full bg-[#344E41] rounded-t-lg p-6 -mt-4">
+                    <div className="flex flex-col sm:flex-row justify-between items-center">
+                        <p className="text-sm sm:text-base text-center sm:text-left mb-4 sm:mb-0 sm:mr-16">
+                            &copy; 2024 John Harold Beladas. All rights reserved.
+                        </p>
 
-                    <div className="flex items-center space-x-4 mt-4 sm:mt-0 text-[#DAD7CD]">
-                        <a
-                            href="https://www.facebook.com/harold.beladas"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:opacity-75 transition-opacity duration-300"
-                        >
-                            <img
-                                src="/images/facebook-icon.png"
-                                alt="Facebook"
-                                className="w-6 h-6 filter invert brightness-0"
-                            />
-                        </a>
-                        <a
-                            href="https://www.instagram.com/harkives_/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:opacity-75 transition-opacity duration-300"
-                        >
-                            <img
-                                src="/images/instagram-icon.png"
-                                alt="Instagram"
-                                className="w-6 h-6 filter invert brightness-0"
-                            />
-                        </a>
-                        <a
-                            href="https://github.com/ryionaes"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="hover:opacity-75 transition-opacity duration-300"
-                        >
-                            <img
-                                src="/images/github-icon.png"
-                                alt="GitHub"
-                                className="w-6 h-6 text-[#DAD7CD] filter invert brightness-0"
-                            />
-                        </a>
+                        <div className="flex items-center space-x-4 mt-4 sm:mt-0 text-[#DAD7CD]">
+                            <a
+                                href="https://www.facebook.com/harold.beladas"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:opacity-75 transition-opacity duration-300"
+                            >
+                                <img
+                                    src="/images/facebook-icon.png"
+                                    alt="Facebook"
+                                    className="w-6 h-6 filter invert brightness-0"
+                                />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/harkives_/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:opacity-75 transition-opacity duration-300"
+                            >
+                                <img
+                                    src="/images/instagram-icon.png"
+                                    alt="Instagram"
+                                    className="w-6 h-6 filter invert brightness-0"
+                                />
+                            </a>
+                            <a
+                                href="https://github.com/ryionaes"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="hover:opacity-75 transition-opacity duration-300"
+                            >
+                                <img
+                                    src="/images/github-icon.png"
+                                    alt="GitHub"
+                                    className="w-6 h-6 text-[#DAD7CD] filter invert brightness-0"
+                                />
+                            </a>
+                        </div>
                     </div>
                 </div>
             </footer>
         );
     };
 
+
     return (
         <>
             <header
                 className={`fixed top-0 left-1/2 transform -translate-x-1/2 py-3 flex justify-center items-center px-8 z-50 shadow-md w-full max-w-sm mt-8 rounded-lg transition-all duration-300 ease-in-out ${isScrolled ? 'bg-[#344E41] bg-opacity-20 backdrop-blur-md' : 'bg-transparent backdrop-blur-none'} border-2 border-[#DAD7CD] ${isScrolled ? 'border-opacity-30' : 'border-opacity-100'}`}
             >
-
-                <div className="flex space-x-4">
+                <div className="flex space-x-4 md:space-x-6">
                     <a href="https://www.facebook.com/harold.beladas" target="_blank" rel="noopener noreferrer">
                         <img src="/images/facebook-icon.png" alt="Facebook" className="w-6 h-6 filter invert brightness-0"/>
                     </a>
@@ -155,6 +158,7 @@ export default function Page() {
                     </a>
                 </div>
             </header>
+
 
             <main
                 className="pt-28 flex flex-col items-center justify-center min-h-screen bg-[#344E41] text-[#DAD7CD] font-poppins">
@@ -211,16 +215,17 @@ export default function Page() {
                 </section>
 
                 <div className="mt-36 bg-[#DAD7CD] rounded-3xl p-8 shadow-lg">
-                    <h1 className="text-8xl font-bold text-[#344E41] text-center relative drop-shadow-2xl">
-                        hobbies !
+                    <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-[#344E41] text-center relative drop-shadow-2xl">
+                        Hobbies!
                     </h1>
-                    <h1 className="mb-5 font-thin text-[#344E41] text-center relative drop-shadow-2xl">
-                        some of my fav hobbies :P
+                    <h1 className="mb-5 text-xl sm:text-2xl font-thin text-[#344E41] text-center relative drop-shadow-2xl">
+                        Some of my fav hobbies :P
                     </h1>
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {/* Video 1: Gaming */}
                         <div
-                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out">
+                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
                             <div className="relative">
                                 <video className="w-full h-56 sm:h-64 object-cover rounded-lg" preload="auto" muted
                                        autoPlay loop controls={false}>
@@ -239,8 +244,9 @@ export default function Page() {
                             </div>
                         </div>
 
+                        {/* Video 2: Binge Watching */}
                         <div
-                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out">
+                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
                             <div className="relative">
                                 <video className="w-full h-56 sm:h-64 object-cover rounded-lg" preload="auto" muted
                                        autoPlay loop controls={false}>
@@ -259,8 +265,9 @@ export default function Page() {
                             </div>
                         </div>
 
+                        {/* Video 3: Sleeping */}
                         <div
-                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out">
+                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
                             <div className="relative">
                                 <video className="w-full h-56 sm:h-64 object-cover rounded-lg" preload="auto" muted
                                        autoPlay loop controls={false}>
@@ -279,8 +286,9 @@ export default function Page() {
                             </div>
                         </div>
 
+                        {/* Video 4: Writing (new) */}
                         <div
-                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out">
+                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
                             <div className="relative">
                                 <video className="w-full h-56 sm:h-64 object-cover rounded-lg" preload="auto" muted
                                        autoPlay loop controls={false}>
@@ -379,6 +387,47 @@ export default function Page() {
                         </div>
                     </div>
                 </div>
+
+                <div className="mt-24 w-full flex justify-center pb-12 relative">
+                    {/* Contacts Text Above the Calling Card */}
+                    <div className="absolute top-0 left-0 w-full text-center text-6xl font-bold text-[#dad7cd] drop-shadow-2xl -mt-14">
+                        Contacts
+                    </div>
+
+                    {/* Outer container with rounded corners and padding */}
+                    <div
+                        className="bg-[#DAD7CD] w-full sm:w-3/4 lg:w-2/3 rounded-lg p-8 shadow-lg flex flex-col sm:flex-row justify-center items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-8">
+                        {/* Left section: Socials and Email */}
+                        <div className="flex flex-col items-start space-y-4 text-[#344E41] w-full sm:w-1/2">
+                            {/* Socials Section */}
+                            <div>
+                                <h2 className="text-2xl font-bold">SOCIALS</h2>
+                                <div className="space-y-2 mt-2">
+                                    <p>Facebook: @harold.beladas</p>
+                                    <p>Instagram: @harkives_</p>
+                                    <p>GitHub: @ryionaes</p>
+                                </div>
+                            </div>
+
+                            {/* Email Section */}
+                            <div>
+                                <h2 className="text-2xl font-bold mt-4">Email</h2>
+                                <p>your-email@example.com</p>
+                            </div>
+                        </div>
+
+                        {/* Right section: Image */}
+                        <div className="w-full sm:w-1/3 flex justify-center sm:justify-start mt-6 sm:mt-0">
+                            <img
+                                src="/images/your-picture.jpg"
+                                alt="Your Picture"
+                                className="w-32 h-32 sm:w-48 sm:h-48 object-cover rounded-full border-4 border-[#344E41]"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+
             </main>
 
             <Footer/>
