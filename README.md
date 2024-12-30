@@ -77,7 +77,7 @@ To customize this portfolio, you can:
 
 ## License
 
-This project is open source and available under the [MIT License](LICENSE).
+This project is open source and available under the [MIT License]
 ```
 
 This `README` covers the project setup, features, and customization options. You can replace the placeholders like `your-username` and `your-repo-name` with your actual GitHub username and repository name.
