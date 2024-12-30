@@ -173,7 +173,7 @@ export default function Page() {
 
                 <section ref={aboutMeRef} className="relative w-full mt-64 sm:mt-72">
                     <h1 className="text-6xl sm:text-7xl lg:text-9xl font-bold text-[#DAD7CD] text-center relative top-20 drop-shadow-2xl">
-                        Hi there! I'm
+                        Hi there! I am
                     </h1>
 
                     <div
@@ -196,7 +196,7 @@ export default function Page() {
                                     <p className="text-[#344E41] text-sm sm:text-base font-normal mt-1">from San
                                         Cristobal, San Pablo City, Laguna.</p>
                                     <p className="text-[#3A5A40] font-extralight text-sm sm:text-sm mt-4">School</p>
-                                    <p className="text-[#344E41] text-sm sm:text-lg font-normal mt-1">I'm currently
+                                    <p className="text-[#344E41] text-sm sm:text-lg font-normal mt-1">I am currently
                                         taking the BSINFOTECH program at the Laguna State Polytechnic University - San
                                         Pablo Campus.</p>
                                     <p className="text-[#3A5A40] font-extralight text-sm sm:text-sm mt-4">Interests</p>
