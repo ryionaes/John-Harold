@@ -231,7 +231,8 @@ export default function Page() {
 
                 {/* Green Floating Container */}
                 <div
-                    className="absolute -bottom-2 left-0 right-0 bg-[#344E41] rounded-t-[30px] w-full z-20 mt-10 sm:mt-16 md:mt-20 lg:mt-24">
+                    className="absolute -bottom-1 sm:bottom-0 md:bottom-0 left-0 right-0 bg-[#344E41] rounded-t-[30px] w-full z-20 mt-0 sm:mt-16 md:mt-20 lg:mt-24">
+
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
                         <div className="text-center text-[#DAD7CD]">
                             {/* Content for the container */}
