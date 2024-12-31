@@ -1,12 +1,14 @@
 "use client";
 
 import { useState, useEffect, useRef } from "react";
+import Head from "next/head";
 
 export default function Page() {
     const [hydrated, setHydrated] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
     const [currentIndex, setCurrentIndex] = useState(0);
     const aboutMeRef = useRef<HTMLElement | null>(null);
+
 
     useEffect(() => {
         setHydrated(true);
@@ -159,6 +161,13 @@ export default function Page() {
 
     return (
         <>
+            <Head>
+                <link rel="preload" href="/images/forest.gif" as="image"/>
+                <link rel="preload" href="/gifs/hobby1.gif" as="image"/>
+                <link rel="preload" href="/gifs/hobby2.gif" as="image"/>
+                <link rel="preload" href="/gifs/hobby3.gif" as="image"/>
+                <link rel="preload" href="/gifs/hobby4.gif" as="image"/>
+            </Head>
         {/* Main Section */}
             <main className="flex flex-col items-center justify-center bg-[#344E41] text-[#DAD7CD] font-poppins">
                 {/* Video Background Section */}
