@@ -13,12 +13,12 @@ export default function Page() {
     }, []);
 
     useEffect(() => {
-        // Simulate a longer loading duration (e.g., 3 seconds)
+        // Delay setting hydrated to true for 30 seconds
         const timeout = setTimeout(() => {
             setHydrated(true);
-        }, 3000); // Adjust the duration here (3000ms = 3 seconds)
+        }, 10000); // 30000ms = 30 seconds
 
-        return () => clearTimeout(timeout); // Clean up timeout
+        return () => clearTimeout(timeout); // Clean up the timeout on unmount
     }, []);
 
 
