@@ -165,17 +165,14 @@ export default function Page() {
                 <div className="relative w-full h-screen flex items-center justify-center overflow-hidden">
                     {/* Video Container */}
                     <div className="absolute top-0 left-0 w-full h-full">
-                        {/* Video */}
-                        <video
-                            autoPlay
-                            loop
-                            muted
-                            preload="auto"
+                        {/* GIF */}
+                        <img
+                            src="/images/forest.gif"
+                            alt="Forest Animation"
                             className="absolute top-0 left-0 min-w-full min-h-full object-cover"
-                        >
-                            <source src="/videos/forest.mp4" type="video/mp4"/>
-                        </video>
+                        />
                     </div>
+
 
                     {/* Overlay */}
                     <div className="absolute top-0 left-0 w-full h-full bg-[#000] opacity-70 z-1"></div>
@@ -274,224 +271,216 @@ export default function Page() {
                     </div>
                 </section>
 
-                    <div className="mt-36 w-full flex justify-center pb-12 relative">
-                        {/* Contacts Text Above the Calling Card */}
-                        <div
-                            className="absolute top-0 left-0 w-full text-center text-6xl font-bold text-[#dad7cd] drop-shadow-2xl -mt-14">
-                            Contacts
-                        </div>
-
-                        {/* Outer container with rounded corners and padding */}
-                        <div
-                            className="bg-[#DAD7CD] h-auto w-full sm:w-3/4 lg:w-2/3 rounded-lg p-6 shadow-lg flex flex-col sm:flex-row justify-center items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-8">
-                            {/* Left section: Socials and Email */}
-                            <div className="flex flex-col items-start space-y-4 text-[#344E41] w-full sm:w-1/2">
-                                {/* Socials Section */}
-                                <div>
-                                    <h2 className="text-xl sm:text-2xl font-bold">SOCIALS</h2>
-                                    <div className="space-y-2 mt-2">
-                                        <p>Facebook: @harold.beladas</p>
-                                        <p>Instagram: @harkives_</p>
-                                        <p>GitHub: @ryionaes</p>
-                                    </div>
-                                </div>
-
-                                {/* Email Section */}
-                                <div>
-                                    <h2 className="text-xl sm:text-2xl font-bold mt-6 sm:mt-8">Email</h2>
-                                    <p>harrybeladas0@gmail.com</p>
-                                </div>
-                            </div>
-
-                            {/* Right section: Image */}
-                            <div className="w-full sm:w-1/3 flex justify-center sm:justify-start mt-6 sm:mt-0">
-                                <img
-                                    src="/images/my.png"
-                                    alt="Your Picture"
-                                    className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-full border-4 border-[#344E41]"/>
-                            </div>
-                        </div>
-
+                <div className="mt-36 w-full flex justify-center pb-12 relative">
+                    {/* Contacts Text Above the Calling Card */}
+                    <div
+                        className="absolute top-0 left-0 w-full text-center text-6xl font-bold text-[#dad7cd] drop-shadow-2xl -mt-14">
+                        Contacts
                     </div>
 
-                    <div className="mt-16 bg-[#DAD7CD] rounded-3xl p-8 shadow-lg mx-auto max-w-7xl">
-                        <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-[#344E41] text-center relative drop-shadow-2xl">
-                            Hobbies!
-                        </h1>
-                        <h1 className="mb-5 text-xl sm:text-2xl font-thin text-[#344E41] text-center relative drop-shadow-2xl">
-                            Some of my fav hobbies :P
-                        </h1>
+                    {/* Outer container with rounded corners and padding */}
+                    <div
+                        className="bg-[#DAD7CD] h-auto w-full sm:w-3/4 lg:w-2/3 rounded-lg p-6 shadow-lg flex flex-col sm:flex-row justify-center items-center sm:items-start space-y-6 sm:space-y-0 sm:space-x-8">
+                        {/* Left section: Socials and Email */}
+                        <div className="flex flex-col items-start space-y-4 text-[#344E41] w-full sm:w-1/2">
+                            {/* Socials Section */}
+                            <div>
+                                <h2 className="text-xl sm:text-2xl font-bold">SOCIALS</h2>
+                                <div className="space-y-2 mt-2">
+                                    <p>Facebook: @harold.beladas</p>
+                                    <p>Instagram: @harkives_</p>
+                                    <p>GitHub: @ryionaes</p>
+                                </div>
+                            </div>
 
-                        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                            {/* Video 1: Gaming */}
-                            <div
-                                className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
-                                <div className="relative">
-                                    <video className="w-full h-48 sm:h-56 object-cover rounded-lg" preload="auto" muted
-                                           autoPlay loop controls={false}>
-                                        <source src="/videos/hobby1.mp4" type="video/mp4"/>
-                                    </video>
-                                    <div className="absolute inset-0 flex justify-center items-center text-center">
+                            {/* Email Section */}
+                            <div>
+                                <h2 className="text-xl sm:text-2xl font-bold mt-6 sm:mt-8">Email</h2>
+                                <p>harrybeladas0@gmail.com</p>
+                            </div>
+                        </div>
+
+                        {/* Right section: Image */}
+                        <div className="w-full sm:w-1/3 flex justify-center sm:justify-start mt-6 sm:mt-0">
+                            <img
+                                src="/images/my.png"
+                                alt="Your Picture"
+                                className="w-48 h-48 sm:w-64 sm:h-64 object-cover rounded-full border-4 border-[#344E41]"/>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div className="mt-16 bg-[#DAD7CD] rounded-3xl p-8 shadow-lg mx-auto max-w-7xl">
+                    <h1 className="text-4xl sm:text-6xl md:text-8xl font-bold text-[#344E41] text-center relative drop-shadow-2xl">
+                        Hobbies!
+                    </h1>
+                    <h1 className="mb-5 text-xl sm:text-2xl font-thin text-[#344E41] text-center relative drop-shadow-2xl">
+                        Some of my fav hobbies :P
+                    </h1>
+
+                    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                        {/* GIF 1: Gaming */}
+                        <div
+                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
+                            <div className="relative">
+                                <img className="w-full h-48 sm:h-56 object-cover rounded-lg" src="/gifs/hobby1.gif"
+                                     alt="Gaming"/>
+                                <div className="absolute inset-0 flex justify-center items-center text-center">
                     <span
                         className="text-white font-bold text-xl inline-block rounded-lg hover:border-[#344E41] hover:bg-white hover:text-[#344E41] px-2 py-1 transition-all duration-300">
                         Gaming
                     </span>
-                                    </div>
-                                    <div
-                                        className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        Credits to: @VALORANT
-                                    </div>
+                                </div>
+                                <div
+                                    className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    Credits to: @VALORANT
                                 </div>
                             </div>
+                        </div>
 
-                            {/* Video 2: Binge Watching */}
-                            <div
-                                className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
-                                <div className="relative">
-                                    <video className="w-full h-48 sm:h-56 object-cover rounded-lg" preload="auto" muted
-                                           autoPlay loop controls={false}>
-                                        <source src="/videos/hobby2.mp4" type="video/mp4"/>
-                                    </video>
-                                    <div className="absolute inset-0 flex justify-center items-center text-center">
+                        {/* GIF 2: Binge Watching */}
+                        <div
+                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
+                            <div className="relative">
+                                <img className="w-full h-48 sm:h-56 object-cover rounded-lg" src="/gifs/hobby2.gif"
+                                     alt="Binge Watching"/>
+                                <div className="absolute inset-0 flex justify-center items-center text-center">
                     <span
                         className="text-white font-bold text-xl inline-block rounded-lg hover:border-[#344E41] hover:bg-white hover:text-[#344E41] px-2 py-1 transition-all duration-300">
                         Binge Watching
                     </span>
-                                    </div>
-                                    <div
-                                        className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        Credits to: @Netflix
-                                    </div>
+                                </div>
+                                <div
+                                    className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    Credits to: @Netflix
                                 </div>
                             </div>
+                        </div>
 
-                            {/* Video 3: Sleeping */}
-                            <div
-                                className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
-                                <div className="relative">
-                                    <video className="w-full h-48 sm:h-56 object-cover rounded-lg" preload="auto" muted
-                                           autoPlay loop controls={false}>
-                                        <source src="/videos/hobby3.mp4" type="video/mp4"/>
-                                    </video>
-                                    <div className="absolute inset-0 flex justify-center items-center text-center">
+                        {/* GIF 3: Sleeping */}
+                        <div
+                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
+                            <div className="relative">
+                                <img className="w-full h-48 sm:h-56 object-cover rounded-lg" src="/gifs/hobby3.gif"
+                                     alt="Sleeping"/>
+                                <div className="absolute inset-0 flex justify-center items-center text-center">
                     <span
                         className="text-white font-bold text-xl inline-block rounded-lg hover:border-[#344E41] hover:bg-white hover:text-[#344E41] px-2 py-1 transition-all duration-300">
                         Sleeping
                     </span>
-                                    </div>
-                                    <div
-                                        className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        Credits to: @PoggyWoggyClips
-                                    </div>
+                                </div>
+                                <div
+                                    className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    Credits to: @PoggyWoggyClips
                                 </div>
                             </div>
+                        </div>
 
-                            {/* Video 4: Writing (new) */}
-                            <div
-                                className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
-                                <div className="relative">
-                                    <video className="w-full h-48 sm:h-56 object-cover rounded-lg" preload="auto" muted
-                                           autoPlay loop controls={false}>
-                                        <source src="/videos/hobby4.mp4" type="video/mp4"/>
-                                    </video>
-                                    <div className="absolute inset-0 flex justify-center items-center text-center">
+                        {/* GIF 4: Writing */}
+                        <div
+                            className="group bg-white shadow-lg rounded-lg p-4 hover:shadow-xl hover:translate-y-[-0.5rem] transition-all duration-300 ease-in-out flex flex-col justify-between">
+                            <div className="relative">
+                                <img className="w-full h-48 sm:h-56 object-cover rounded-lg" src="/gifs/hobby4.gif"
+                                     alt="Writing"/>
+                                <div className="absolute inset-0 flex justify-center items-center text-center">
                     <span
                         className="text-white font-bold text-xl inline-block rounded-lg hover:border-[#344E41] hover:bg-white hover:text-[#344E41] px-2 py-1 transition-all duration-300">
                         Writing
                     </span>
-                                    </div>
-                                    <div
-                                        className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                                        Credits to: @PeakTiktokMemes
-                                    </div>
+                                </div>
+                                <div
+                                    className="absolute bottom-2 left-2 bg-black bg-opacity-60 text-white text-sm rounded-lg px-2 py-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                    Credits to: @PeakTiktokMemes
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
 
-                    <div className="mt-1 w-full flex flex-col sm:flex-row justify-center items-center pb-24">
-                        <div className="flex flex-col items-start mt-4 sm:mt-0 sm:ml-8 order-1 sm:order-none">
-                            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-[#FFF]">my</h1>
-                            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-[#FFF]">favorite</h1>
-                            <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-[#FFF]">songs</h1>
-                        </div>
+                <div className="mt-1 w-full flex flex-col sm:flex-row justify-center items-center pb-24">
+                    <div className="flex flex-col items-start mt-4 sm:mt-0 sm:ml-8 order-1 sm:order-none">
+                        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-[#FFF]">my</h1>
+                        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-[#FFF]">favorite</h1>
+                        <h1 className="text-6xl sm:text-7xl lg:text-8xl font-bold text-[#FFF]">songs</h1>
+                    </div>
 
+                    <div
+                        className="flex flex-col items-start text-left space-y-4 w-full sm:w-1/2 order-2 sm:order-none sm:ml-8">
                         <div
-                            className="flex flex-col items-start text-left space-y-4 w-full sm:w-1/2 order-2 sm:order-none sm:ml-8">
-                            <div
-                                className="bg-[#DAD7CD] rounded-t-[30px] rounded-b-[30px] shadow-lg w-full relative z-20 mt-20">
-                                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-                                    <div
-                                        className="flex flex-col items-start mt-20 space-y-6 sm:space-x-6 mb-16 bg-[#DAD7CD] p-8 rounded-lg shadow-lg w-full">
-                                        <div className="flex-shrink-0">
-                                            <img
-                                                src={songs[currentIndex].image}
-                                                alt="Song Cover"
-                                                className="w-52 sm:w-72 h-52 sm:h-72 object-cover shadow-md rounded-lg"
-                                            />
-                                        </div>
-
-                                        <div className="flex-1 sm:text-left mt-6 sm:mt-0">
-                                            <p className="text-[#3A5A40] font-extralight text-sm sm:text-sm">Song</p>
-                                            <p className="text-[#344E41] text-lg sm:text-xl lg:text-4xl font-bold mt-2">{songs[currentIndex].title}</p>
-                                            <p className="text-[#344E41] text-sm sm:text-base font-normal mt-1">by {songs[currentIndex].artist}</p>
-                                            <p className="text-[#344E41] text-xl sm:text-2xl font-semibold mt-4">{songs[currentIndex].quote}</p>
-                                            <p className="text-[#3A5A40] font-extralight mt-4 text-sm sm:text-sm">LISTEN
-                                                NOW</p>
-                                            <div className="mt-3 flex space-x-3">
-                                                <a href={songs[currentIndex].spotify} target="_blank"
-                                                   rel="noopener noreferrer">
-                                                    <img
-                                                        src="/images/spotify-icon.png"
-                                                        alt="Spotify"
-                                                        className="w-10 h-10"
-                                                    />
-                                                </a>
-                                                <a href={songs[currentIndex].youtube} target="_blank"
-                                                   rel="noopener noreferrer">
-                                                    <img
-                                                        src="/images/youtube-music-icon.png"
-                                                        alt="YouTube Music"
-                                                        className="w-10 h-10"
-                                                    />
-                                                </a>
-                                                <a href={songs[currentIndex].apple} target="_blank"
-                                                   rel="noopener noreferrer">
-                                                    <img
-                                                        src="/images/apple-music-icon.png"
-                                                        alt="Apple Music"
-                                                        className="w-10 h-10"
-                                                    />
-                                                </a>
-
-                                            </div>
-                                        </div>
+                            className="bg-[#DAD7CD] rounded-t-[30px] rounded-b-[30px] shadow-lg w-full relative z-20 mt-20">
+                            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+                                <div
+                                    className="flex flex-col items-start mt-20 space-y-6 sm:space-x-6 mb-16 bg-[#DAD7CD] p-8 rounded-lg shadow-lg w-full">
+                                    <div className="flex-shrink-0">
+                                        <img
+                                            src={songs[currentIndex].image}
+                                            alt="Song Cover"
+                                            className="w-52 sm:w-72 h-52 sm:h-72 object-cover shadow-md rounded-lg"
+                                        />
                                     </div>
 
-                                    <div className="flex space-x-4 justify-between">
-                                        <button
-                                            onClick={prevSong}
-                                            className="bg-[#DAD7CD] text-[#344E41] px-4 py-2 rounded-md shadow-md hover:bg-[#3A5A40] hover:text-[#DAD7CD] transition-all duration-300"
-                                        >
-                                            Prev
-                                        </button>
-                                        <button
-                                            onClick={nextSong}
-                                            className="bg-[#DAD7CD] text-[#344E41] px-4 py-2 rounded-md shadow-md hover:bg-[#3A5A40] hover:text-[#DAD7CD] transition-all duration-300"
-                                        >
-                                            Next
-                                        </button>
+                                    <div className="flex-1 sm:text-left mt-6 sm:mt-0">
+                                        <p className="text-[#3A5A40] font-extralight text-sm sm:text-sm">Song</p>
+                                        <p className="text-[#344E41] text-lg sm:text-xl lg:text-4xl font-bold mt-2">{songs[currentIndex].title}</p>
+                                        <p className="text-[#344E41] text-sm sm:text-base font-normal mt-1">by {songs[currentIndex].artist}</p>
+                                        <p className="text-[#344E41] text-xl sm:text-2xl font-semibold mt-4">{songs[currentIndex].quote}</p>
+                                        <p className="text-[#3A5A40] font-extralight mt-4 text-sm sm:text-sm">LISTEN
+                                            NOW</p>
+                                        <div className="mt-3 flex space-x-3">
+                                            <a href={songs[currentIndex].spotify} target="_blank"
+                                               rel="noopener noreferrer">
+                                                <img
+                                                    src="/images/spotify-icon.png"
+                                                    alt="Spotify"
+                                                    className="w-10 h-10"
+                                                />
+                                            </a>
+                                            <a href={songs[currentIndex].youtube} target="_blank"
+                                               rel="noopener noreferrer">
+                                                <img
+                                                    src="/images/youtube-music-icon.png"
+                                                    alt="YouTube Music"
+                                                    className="w-10 h-10"
+                                                />
+                                            </a>
+                                            <a href={songs[currentIndex].apple} target="_blank"
+                                               rel="noopener noreferrer">
+                                                <img
+                                                    src="/images/apple-music-icon.png"
+                                                    alt="Apple Music"
+                                                    className="w-10 h-10"
+                                                />
+                                            </a>
+
+                                        </div>
                                     </div>
+                                </div>
+
+                                <div className="flex space-x-4 justify-between">
+                                    <button
+                                        onClick={prevSong}
+                                        className="bg-[#DAD7CD] text-[#344E41] px-4 py-2 rounded-md shadow-md hover:bg-[#3A5A40] hover:text-[#DAD7CD] transition-all duration-300"
+                                    >
+                                        Prev
+                                    </button>
+                                    <button
+                                        onClick={nextSong}
+                                        className="bg-[#DAD7CD] text-[#344E41] px-4 py-2 rounded-md shadow-md hover:bg-[#3A5A40] hover:text-[#DAD7CD] transition-all duration-300"
+                                    >
+                                        Next
+                                    </button>
                                 </div>
                             </div>
                         </div>
                     </div>
+                </div>
 
 
             </main>
 
             <Footer/>
         </>
-);
+    );
 }
